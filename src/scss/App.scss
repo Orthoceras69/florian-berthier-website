@@ -1,168 +1,240 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Sans+Pro:wght@300;400&display=swap");
 
 // font-family: 'Source Sans Pro', sans-serif;
 // font-family: 'Poppins', sans-serif;
 
 $black: #000;
-$grey: #7E7F7E;
-$white: #FFF;
-$darkblue: #0D0551;
-$lightblue: #30E9FF;
+$grey: #7e7f7e;
+$white: #fff;
+$darkblue: #0d0551;
+$lightblue: #30e9ff;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-h1{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    color: $white;
-    text-align: center;
-    strong{
-        font-size: 36px;
-    }
+h1 {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	color: $white;
+	text-align: center;
+	strong {
+		font-size: 36px;
+	}
 }
 
-h2{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 36px;
-    font-weight: 400;
+h2 {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	color: $white;
+	text-align: center;
 }
 
-h3{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
+h3 {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	color: $white;
 }
 
-a{
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
+p {
+	font-family: "Poppins", sans-serif;
+	color: $white;
+	font-size: 16px !important;
 }
 
-.Columns{
-    display: flex;
-    flex-wrap: nowrap;
-    .Column1_6{
-        width: 16%;
-    }
+a {
+	font-family: "Poppins", sans-serif;
+	text-decoration: none;
+	color: $white;
+	font-size: 16px !important;
+	transition: 0.3s;
+}
+a:hover {
+	color: $grey;
 }
 
-#root{
-    background: $darkblue;
+.button {
+	text-align: center;
+	a {
+		border: solid 1px $white;
+		border-radius: 16px;
+		padding: 10px;
+		text-align: center;
+		transition: 0.3s;
+	}
+}
+.button:hover {
+	a {
+		border: solid 1px $grey;
+	}
 }
 
-header{
-    position: absolute;
-    width: 100vw;
-    .header_content{
-        max-width: 1170px;
-        padding: 20px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .logo{
-            img{
-                width: 200px;
-            }
-        }
-        nav{
-            margin: auto 0;
-            width: 50%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            a{
-                color: $white;
-            }
-            a:hover{
-                color: $lightblue;
-            }
-        }
-    }
+hr {
+	width: 150px;
 }
 
-main{
-    height: 100vh;
-    .player_card{
-        margin: 0 auto;
-        padding-top: 150px;
-        width: 500px;
-        display: flex;
-        flex-wrap: wrap;
-        .profil_picture{
-            z-index: 1;
-            margin: 0 auto;
-            width: 300px;
-            border-radius: 50%;
-            border: solid 10px $lightblue;
-        }
-        .player_info{
-            z-index: 0;
-            margin-top: -150px;
-            padding-top: 175px !important;
-            padding: 20px;
-            width: 100%;
-            border-radius: 16px;
-            background: $darkblue;
-        }
-        .social_nav{
-            width: 100%;
-            margin: 50px 0;
-            justify-content: space-around;
-            div{
-                text-align: center;
-                a{
-                    border-radius: 50%;
-                    border: solid 2px $white;
-                    padding: 15px 12.5px 10px 12.5px;
-                    svg{
-                        color: $white;
-                        height: 20px;
-                        width: 20px;
-                    }
-                }
-                a.linkedin:hover{
-                    border: solid 2px #0A66C2;
-                    svg{
-                        color: #0A66C2;
-                    }
-                }
-                a.twitch:hover{
-                    border: solid 2px #9146FF;
-                    svg{
-                        color: #9146FF;
-                    }
-                }
-                a.instagram:hover{
-                    border: solid 2px #E4405F;
-                    svg{
-                        color: #E4405F;
-                    }
-                }
-                a.facebook:hover{
-                    border: solid 2px #1877F2;
-                    svg{
-                        color: #1877F2;
-                    }
-                }
-                a.discord:hover{
-                    border: solid 2px #5865F2;
-                    svg{
-                        color: #5865F2;
-                    }
-                }
-                a.envelope:hover{
-                    border: solid 2px $grey;
-                    svg{
-                        color: $grey;
-                    }
-                }
-            }
-        }
-    }
+.columns {
+	margin: 25px 0;
+	display: flex;
+	flex-wrap: nowrap;
+	.column1_2 {
+		width: 49.5%;
+	}
+	.column1_6 {
+		width: 16%;
+	}
+}
+
+#root {
+	background: $darkblue;
+}
+
+header {
+	position: absolute;
+	width: 100vw;
+	.header_content {
+		max-width: 1170px;
+		padding: 20px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.logo {
+			img {
+				width: 200px;
+			}
+		}
+		nav {
+			margin: auto 0;
+			width: 50%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			a {
+				color: $white;
+				transition: 0.3s;
+			}
+			a:hover {
+				color: $grey;
+			}
+		}
+	}
+}
+
+main {
+	height: 100vh;
+	.player_card {
+		margin: 0 auto;
+		padding-top: 150px;
+		width: 500px;
+		display: flex;
+		flex-wrap: wrap;
+		.profil_picture {
+			box-shadow: 0px 0px 25px 0px $black;
+			z-index: 1;
+			margin: 0 auto;
+			width: 300px;
+			border-radius: 50%;
+			border: solid 10px $lightblue;
+			filter: grayscale(80%);
+			transition: 0.3s;
+		}
+		.profil_picture:hover {
+			filter: grayscale(0%);
+		}
+		.player_info {
+			box-shadow: 0px 0px 25px 0px $black;
+			z-index: 0;
+			margin-top: -150px;
+			padding-top: 175px !important;
+			padding: 20px;
+			width: 100%;
+			border-radius: 16px;
+			background: $darkblue;
+		}
+		.social_nav {
+			width: 100%;
+			margin: 50px 0;
+			justify-content: space-around;
+			div {
+				text-align: center;
+				a {
+					border-radius: 50%;
+					border: solid 2px $white;
+					padding: 15px 12.5px 10px 12.5px;
+					transition: 0.3s;
+					svg {
+						color: $white;
+						height: 20px;
+						width: 20px;
+						transition: 0.3s;
+					}
+				}
+				a.linkedin:hover {
+					border: solid 2px #0a66c2;
+					svg {
+						color: #0a66c2;
+					}
+				}
+				a.twitch:hover {
+					border: solid 2px #9146ff;
+					svg {
+						color: #9146ff;
+					}
+				}
+				a.instagram:hover {
+					border: solid 2px #e4405f;
+					svg {
+						color: #e4405f;
+					}
+				}
+				a.facebook:hover {
+					border: solid 2px #1877f2;
+					svg {
+						color: #1877f2;
+					}
+				}
+				a.discord:hover {
+					border: solid 2px #5865f2;
+					svg {
+						color: #5865f2;
+					}
+				}
+				a.envelope:hover {
+					border: solid 2px $grey;
+					svg {
+						color: $grey;
+					}
+				}
+			}
+		}
+	}
+}
+
+aside {
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 20px;
+	.picto {
+		width: 100%;
+		color: $white;
+		height: 50px !important;
+		margin-bottom: 10px;
+	}
+	h2 {
+		margin-bottom: 30px;
+	}
+	p {
+		margin-top: 20px;
+	}
+	.columns {
+		h3 {
+			margin-bottom: 20px;
+		}
+	}
 }
