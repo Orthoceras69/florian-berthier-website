@@ -1,13 +1,15 @@
 function Header() {
     return (
       <header>
-        <img src="/img/Logo_Blanc_Nom.png" alt="Logo Florian Berthier"/>
+        <a href="" className="logo">
+            <img src="/img/Logo_Blanc_Nom.png" alt="Logo Florian Berthier"/>
+        </a>
         <nav>
-            <ul>
-                <li>
-                    <a href=""></a>
-                </li>
-            </ul>
+            <a href="">Accueil</a>
+            <a href="">À propos</a>
+            <a href="">Compétences</a>
+            <a href="">Projets</a>
+            <a href="">Contact</a>
         </nav>
       </header>
     );
