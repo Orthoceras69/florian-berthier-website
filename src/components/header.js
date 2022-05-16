@@ -6,7 +6,7 @@ function Header() {
                 <img src="/img/Logo_Blanc_Nom.png" alt="Logo Florian Berthier"/>
             </a>
             <nav>
-                <a href="">Accueil</a>
+                <a href="#home">Accueil</a>
                 <a href="">À propos</a>
                 <a href="">Compétences</a>
                 <a href="">Projets</a>
