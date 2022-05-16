@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+// font-family: 'Source Sans Pro', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+$black: #000;
+$grey: #7E7F7E;
+$white: #FFF;
+$darkblue: #0D0551;
+$lightblue: #30E9FF;
+
+h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    strong{
+        font-size: 24px;
+    }
+}
+
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    background: $darkblue;
+}
+
+header{
+    position: absolute;
+    width: 100vw;
+    .header-content{
+        max-width: 1170px;
+        padding: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .logo{
+            img{
+                width: 200px;
+            }
+        }
+        nav{
+            margin: auto 0;
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            a{
+                color: $white;
+            }
+            a:hover{
+                color: $lightblue;
+            }
+        }
+    }
+}
+
+main{
+    height: 100vh;
+}
