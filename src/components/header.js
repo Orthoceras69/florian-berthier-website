@@ -1,7 +1,7 @@
 function Header() {
     return (
       <header>
-        <div className="header-content">
+        <div className="header_content">
             <a href="" className="logo">
                 <img src="/img/Logo_Blanc_Nom.png" alt="Logo Florian Berthier"/>
             </a>
