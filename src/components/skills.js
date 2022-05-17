@@ -3,9 +3,9 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 function Skills() {
 	return (
-		<aside>
+		<aside id="skills">
 			<FontAwesomeIcon icon={solid("circle-info")} className="picto" />
-			<h2 id="skills">Mes Compétences</h2>
+			<h2>Mes Compétences</h2>
 			<div className="columns">
 				<div className="column1_2">
 					<h3>Compétences Téchniques :</h3>
@@ -78,6 +78,22 @@ function Skills() {
 						<div className="skill">
 							<FontAwesomeIcon icon={solid("laptop-file")} />
 							<strong>Autonomie</strong>
+						</div>
+						<div className="skill">
+							<FontAwesomeIcon icon={solid("ear-listen")} />
+							<strong>Empathie</strong>
+						</div>
+						<div className="skill">
+							<FontAwesomeIcon icon={solid("palette")} />
+							<strong>Créativité</strong>
+						</div>
+						<div className="skill">
+							<FontAwesomeIcon icon={solid("eye")} />
+							<strong>Curiosité</strong>
+						</div>
+						<div className="skill">
+							<FontAwesomeIcon icon={solid("face-grin-squint")} />
+							<strong>Humour</strong>
 						</div>
 					</div>
 				</div>

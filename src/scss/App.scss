@@ -166,7 +166,7 @@ main {
 	height: 100vh;
 	.player_card {
 		margin: 0 auto;
-		padding-top: 200px;
+		padding-top: 20vh;
 		width: 600px;
 		display: flex;
 		flex-wrap: wrap;
@@ -313,6 +313,7 @@ aside {
 		}
 	}
 	.personal_skills {
+		margin-top: 30px;
 		justify-content: left;
 		.skill {
 			margin: 0 10px 20px 10px;
