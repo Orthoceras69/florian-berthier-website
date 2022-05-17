@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Sans+Pro:wght@300;400&display=swap");
+
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Source Sans Pro', sans-serif;
+
+$black: #000;
+$grey: #808080;
+$white: #fff;
+$primary: #0d0551;
+$secondary: #53dd6c;
+$tertiary: #30e9ff;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	color: $white;
+	text-align: center;
+	strong {
+		font-size: 36px;
+	}
+}
+
+h2 {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	color: $white;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h3 {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	color: $white;
+	margin-bottom: 20px;
+}
+
+p {
+	font-family: "Poppins", sans-serif;
+	color: $white;
+	font-size: 16px !important;
+	margin-bottom: 30px;
+}
+
+i {
+	margin: 0 5px;
+	padding: 10px;
+	border-radius: 10px;
+	background: $secondary;
+}
+i:hover {
+	color: $primary;
+}
+
+a {
+	font-family: "Poppins", sans-serif;
+	text-decoration: none;
+	color: $white;
+	font-size: 16px !important;
+	transition: 0.3s;
+}
+a:hover {
+	color: $secondary;
+}
+
+.button {
+	margin: 25px 0;
+	text-align: center;
+	a {
+		font-family: "Poppins", sans-serif;
+		border: solid 1px $white;
+		border-radius: 10px;
+		padding: 10px;
+		text-align: center;
+		transition: 0.3s;
+	}
+}
+.button:hover {
+	a {
+		border: solid 1px $secondary;
+	}
+}
+
+.picto {
+	width: 100%;
+	color: $white;
+	height: 50px !important;
+	margin: 15px 0;
+}
+
+hr {
+	width: 150px;
+}
+
+.columns {
+	margin: 25px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.column1_2 {
+		width: calc(100% / 2);
+	}
+	.column1_4 {
+		width: calc(100% / 4);
+	}
+	.column1_8 {
+		width: calc(100% / 8);
+	}
+}
+
+#root {
+	background: $primary;
+}
+
+header {
+	position: absolute;
+	width: 100vw;
+	.header_content {
+		max-width: 1170px;
+		padding: 20px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.logo {
+			img {
+				width: 200px;
+			}
+		}
+		nav {
+			margin: auto 0;
+			width: 50%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			a {
+				color: $white;
+				transition: 0.3s;
+			}
+			a:hover {
+				color: $secondary;
+			}
+		}
+	}
+}
+
+main {
+	height: 100vh;
+	.player_card {
+		margin: 0 auto;
+		padding-top: 200px;
+		width: 600px;
+		display: flex;
+		flex-wrap: wrap;
+		.profil_picture {
+			box-shadow: 0px 0px 25px 0px $black;
+			z-index: 1;
+			margin: 0 auto;
+			width: 300px;
+			border-radius: 50%;
+			border: solid 10px $secondary;
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				filter: grayscale(80%);
+				transition: 0.3s;
+			}
+		}
+		.profil_picture:hover {
+			img {
+				filter: grayscale(0%);
+			}
+		}
+		.player_info {
+			box-shadow: 0px 0px 25px 0px $black;
+			z-index: 0;
+			margin-top: -150px;
+			padding-top: 175px !important;
+			padding: 20px;
+			width: 100%;
+			border-radius: 16px;
+			background: $primary;
+		}
+		.social_nav {
+			flex-wrap: nowrap;
+			width: 100%;
+			margin: 50px 0;
+			justify-content: space-around;
+			div {
+				text-align: center;
+				a {
+					border-radius: 50%;
+					border: solid 2px $white;
+					padding: 15px 12.5px 10px 12.5px;
+					transition: 0.3s;
+					svg {
+						color: $white;
+						height: 20px;
+						width: 20px;
+						transition: 0.3s;
+					}
+				}
+				a.linkedin:hover {
+					border: solid 2px #0a66c2;
+					svg {
+						color: #0a66c2;
+					}
+				}
+				a.twitch:hover {
+					border: solid 2px #9146ff;
+					svg {
+						color: #9146ff;
+					}
+				}
+				a.instagram:hover {
+					border: solid 2px #e4405f;
+					svg {
+						color: #e4405f;
+					}
+				}
+				a.facebook:hover {
+					border: solid 2px #1877f2;
+					svg {
+						color: #1877f2;
+					}
+				}
+				a.discord:hover {
+					border: solid 2px #5865f2;
+					svg {
+						color: #5865f2;
+					}
+				}
+				a.github:hover {
+					border: solid 2px #808080;
+					svg {
+						color: #808080;
+					}
+				}
+				a.envelope:hover,
+				a.phone:hover {
+					border: solid 2px $secondary;
+					svg {
+						color: $secondary;
+					}
+				}
+			}
+		}
+	}
+}
+
+aside {
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 20px;
+	.hobbies {
+		.hobby {
+			margin: 0 5px 20px 5px;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 10px;
+			border-radius: 16px;
+			box-shadow: 0px 0px 5px 0px $black;
+			transition: 0.3s;
+			background: $secondary;
+			svg {
+				width: 100%;
+				height: 20px;
+				color: $white;
+				transition: 0.3s;
+			}
+			strong {
+				margin-top: 10px;
+				width: 100%;
+				text-align: center;
+				color: $white;
+				transition: 0.3s;
+			}
+		}
+		.hobby:hover {
+			box-shadow: none;
+			svg,
+			strong {
+				color: $primary;
+			}
+		}
+	}
+}
