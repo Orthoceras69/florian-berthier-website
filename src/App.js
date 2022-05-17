@@ -2,6 +2,7 @@ import "./scss/App.scss";
 import Header from "./components/header";
 import PlayerCard from "./components/player_card";
 import AboutMe from "./components/about_me";
+import Skills from "./components/skills";
 
 function App() {
 	return (
@@ -9,6 +10,7 @@ function App() {
 			<Header />
 			<PlayerCard />
 			<AboutMe />
+			<Skills />
 		</>
 	);
 }

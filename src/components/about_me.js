@@ -5,7 +5,7 @@ function AboutMe() {
 	return (
 		<aside>
 			<FontAwesomeIcon icon={solid("circle-user")} className="picto" />
-			<h2 id="a_propos">À propos</h2>
+			<h2 id="about_me">À Propos</h2>
 			<p>
 				Je m'appelle Florian BERTHIER, je suis Développeur & Intégrateur Web
 				Freelance et également étudiant en alternance à Ynov Campus Lyon en Bachelor
