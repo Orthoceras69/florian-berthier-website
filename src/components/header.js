@@ -1,3 +1,6 @@
+// <a href="">Projets</a>
+// <a href="">Contact</a>
+
 function Header() {
 	return (
 		<header>
@@ -9,8 +12,6 @@ function Header() {
 					<a href="#home">Accueil</a>
 					<a href="#about_me">À propos</a>
 					<a href="#skills">Compétences</a>
-					<a href="">Projets</a>
-					<a href="">Contact</a>
 				</nav>
 			</div>
 		</header>
