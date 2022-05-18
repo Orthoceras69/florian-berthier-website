@@ -34,7 +34,7 @@ function AboutMe() {
 							</a>
 						</p>
 						<p>
-							Actuellement : <i>Freelance</i> <i>Étudiant</i> <i>Alternant</i>
+							Actuellement : <i>Freelance</i> <i>Alternant</i>
 						</p>
 					</div>
 					<div className="column1_2">

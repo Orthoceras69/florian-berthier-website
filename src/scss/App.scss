@@ -14,6 +14,7 @@ $tertiary: #30e9ff;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	outline: none;
 }
 
 h1 {
@@ -135,7 +136,6 @@ hr {
 }
 
 .social_nav {
-	flex-wrap: nowrap;
 	width: 100%;
 	margin: 50px 0;
 	justify-content: space-around;
@@ -202,28 +202,40 @@ hr {
 #root {
 	background: $primary;
 }
-
 header {
-	position: absolute;
-	width: 100vw;
-	.header_content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	.navbar {
+		z-index: 3;
+		align-items: center;
+		position: absolute;
 		max-width: 1170px;
-		padding: 20px;
-		margin: 0 auto;
+		width: 100%;
+		margin: auto;
+		padding: 1rem;
+		min-height: 75px;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: space-between;
+		color: $white;
 		.logo {
 			img {
 				width: 200px;
 			}
 		}
-		nav {
-			margin: auto 0;
-			width: 50%;
+		.navbar_links {
+			list-style: none;
+			margin: 0;
+			padding: 0;
 			display: flex;
-			flex-wrap: wrap;
+			width: 50%;
 			justify-content: space-between;
+
+			.navbar_link {
+				padding: 0 0.3rem;
+				color: inherit;
+			}
 			a {
 				color: $white;
 				transition: 0.3s;
@@ -231,6 +243,14 @@ header {
 			a:hover {
 				color: $secondary;
 			}
+		}
+		.navbar_burger {
+			display: none;
+			width: 40px;
+			height: 40px;
+			background: transparent;
+			border: none;
+			color: inherit;
 		}
 	}
 }
@@ -375,6 +395,121 @@ footer {
 			width: 100%;
 			img {
 				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.columns {
+		justify-content: space-around;
+		.column1_8 {
+			width: 25%;
+		}
+		.column1_4 {
+			width: 50%;
+		}
+		.column1_3 {
+			width: 100%;
+		}
+		.column1_2 {
+			width: 100%;
+		}
+		.column3_4 {
+			width: 100%;
+		}
+	}
+
+	.social_nav {
+		.column1_8 {
+			margin: 25px 0;
+		}
+	}
+
+	.navbar {
+		background-color: $primary;
+		position: fixed !important;
+	}
+	.navbar_links {
+		flex-direction: column;
+		justify-content: center !important;
+		align-items: center;
+		position: fixed;
+		right: -100vw;
+		bottom: 0;
+		width: 100% !important;
+		height: 100vh;
+		padding: 2rem;
+		visibility: hidden;
+		background-color: $primary;
+		.navbar_link {
+			display: block;
+			padding: 1.5rem !important;
+			font-size: 5vw !important;
+		}
+	}
+
+	.show-nav .navbar_links {
+		width: 100vw;
+		right: 0;
+		visibility: visible;
+	}
+
+	.navbar_burger {
+		margin-top: 20px;
+		display: block !important;
+		cursor: pointer;
+		position: fixed;
+		top: 1rem;
+		right: 1rem;
+	}
+
+	.burger_bar,
+	.burger_bar::before,
+	.burger_bar::after {
+		display: block;
+		width: 40px;
+		height: 3px;
+		position: relative;
+		border-radius: 3px;
+		background: $white;
+	}
+	.burger_bar::before,
+	.burger_bar::after {
+		content: "";
+		position: absolute;
+		left: 0;
+	}
+
+	.burger_bar::before {
+		transform: translateY(-12px);
+		transition: 0.3s;
+	}
+
+	.burger_bar::after {
+		transform: translateY(12px);
+		transition: 0.3s;
+	}
+
+	.show-nav .burger_bar {
+		background: none;
+	}
+	.show-nav .burger_bar::before {
+		transform: rotate(45deg);
+	}
+	.show-nav .burger_bar::after {
+		transform: rotate(-45deg);
+	}
+
+	main {
+		.player_card {
+			width: 90vw;
+			.profil_picture {
+				width: 40vw;
+			}
+			.player_info {
+				margin-top: -75px;
+				padding-top: 100px !important;
 			}
 		}
 	}
