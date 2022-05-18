@@ -1,7 +1,7 @@
 // <a href="">Projets</a>
 // <a href="">Contact</a>
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Header() {
 	const [showLinks, setShowLinks] = useState(false);
@@ -10,10 +10,25 @@ function Header() {
 		setShowLinks(!showLinks);
 	};
 
+	useEffect(() => {
+		window.addEventListener("scroll", isSticky);
+		return () => {
+			window.removeEventListener("scroll", isSticky);
+		};
+	});
+
+	const isSticky = () => {
+		const header = document.querySelector(".header-section");
+		const scrollTop = window.scrollY;
+		scrollTop >= 300
+			? header.classList.add("is-sticky")
+			: header.classList.remove("is-sticky");
+	};
+
 	console.log(showLinks);
 
 	return (
-		<header>
+		<header className="header-section">
 			<nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
 				<a href="" className="logo">
 					<img src="/img/Logo_Blanc_Nom.png" alt="Logo Florian Berthier" />
