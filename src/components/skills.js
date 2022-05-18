@@ -4,7 +4,7 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 function Skills() {
 	return (
 		<div id="skills">
-			<aside>
+			<section>
 				<FontAwesomeIcon icon={solid("circle-info")} className="picto" />
 				<h2>Mes Compétences</h2>
 				<div className="columns">
@@ -99,7 +99,7 @@ function Skills() {
 						</div>
 					</div>
 				</div>
-			</aside>
+			</section>
 		</div>
 	);
 }

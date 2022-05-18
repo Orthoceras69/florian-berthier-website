@@ -310,11 +310,12 @@ main {
 	}
 }
 
-#skills {
+#skills,
+#contact {
 	background: rgba($tertiary, 0.25);
 }
 
-aside {
+section {
 	margin: 0 auto;
 	max-width: 1170px;
 	padding: 20px;
@@ -396,6 +397,36 @@ aside {
 			strong {
 				color: $primary;
 			}
+		}
+	}
+	form {
+		input.field {
+			padding: 20px;
+			background: none;
+			border: none;
+			border-bottom: solid 1px $black;
+			width: 100%;
+			font-size: 20px;
+			color: $black;
+		}
+		input:placeholder {
+			font-size: 18px;
+			color: $grey;
+		}
+		input.name {
+			width: 92.5%;
+		}
+		input.message {
+			height: 100px;
+			margin-bottom: 20px;
+		}
+		select {
+			padding: 20px;
+			background: none;
+			border: none;
+			border-bottom: solid 1px $black;
+			width: 7.5%;
+			font-size: 20px;
 		}
 	}
 }

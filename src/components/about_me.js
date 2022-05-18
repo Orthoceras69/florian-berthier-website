@@ -4,7 +4,7 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 function AboutMe() {
 	return (
 		<div id="about_me">
-			<aside>
+			<section>
 				<FontAwesomeIcon icon={solid("circle-user")} className="picto" />
 				<h2>À Propos</h2>
 				<p>
@@ -96,7 +96,7 @@ function AboutMe() {
 						Télécharger mon CV <FontAwesomeIcon icon={solid("download")} />
 					</a>
 				</div>
-			</aside>
+			</section>
 		</div>
 	);
 }
