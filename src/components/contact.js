@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { useForm } from "react-hook-form";
+import AirtableApi from "../services/API/API_AIRTABLE";
 
 function Contact() {
 	const {
@@ -10,37 +11,7 @@ function Contact() {
 	} = useForm();
 
 	const onSubmit = (data) => {
-		// eslint-disable-next-line no-undef
-		var Airtable = require("airtable");
-		var base = new Airtable({ apiKey: "key6xJSBNip8TJGX7" }).base(
-			"apphmIhdtXaiTR3r1"
-		);
-
-		base("Contact Form").create(
-			[
-				{
-					fields: {
-						Title: data.gender,
-						"First Name": data.firstName,
-						"Last Name": data.lastName,
-						Email: data.email,
-						Message: data.message,
-						Newsletter: data.newsletter,
-						Responsible: {
-							id: "usrD6BJDGAZXcOhcC",
-							email: "florian.berthier@hotmail.com",
-							name: "Florian BERTHIER",
-						},
-					},
-				},
-			],
-			function (err) {
-				if (err) {
-					console.error(err);
-					return;
-				}
-			}
-		);
+		AirtableApi(data);
 	};
 
 	return (
