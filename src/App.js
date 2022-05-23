@@ -4,6 +4,7 @@ import PlayerCard from "./components/player_card";
 import AboutMe from "./components/about_me";
 import Skills from "./components/skills";
 import Footer from "./components/footer";
+import Contact from "./components/contact";
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<PlayerCard />
 			<AboutMe />
 			<Skills />
+			<Contact />
 			<Footer />
 		</>
 	);

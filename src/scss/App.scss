@@ -73,32 +73,38 @@ i:hover {
 	box-shadow: none;
 }
 
-a {
+a,
+input[type="submit"] {
 	font-family: "Poppins", sans-serif;
 	text-decoration: none;
 	color: $white;
 	font-size: 16px !important;
 	transition: 0.3s;
 }
-a:hover {
+a:hover,
+input[type="submit"]:hover {
 	color: $secondary;
 }
 
 .button {
 	margin: 25px 0;
 	text-align: center;
-	a {
+	a,
+	input[type="submit"] {
 		font-family: "Poppins", sans-serif;
 		border: solid 1px $white;
 		border-radius: 10px;
 		padding: 10px;
 		text-align: center;
 		transition: 0.3s;
+		background: none;
 	}
 }
 .button:hover {
-	a {
+	a,
+	input[type="submit"] {
 		border: solid 1px $secondary;
+		color: $secondary;
 	}
 }
 
@@ -310,11 +316,12 @@ main {
 	}
 }
 
-#skills {
+#skills,
+#contact {
 	background: rgba($tertiary, 0.25);
 }
 
-aside {
+section {
 	margin: 0 auto;
 	max-width: 1170px;
 	padding: 20px;
@@ -396,6 +403,51 @@ aside {
 			strong {
 				color: $primary;
 			}
+		}
+	}
+	form {
+		input.field,
+		textarea.field {
+			padding: 20px;
+			background: none;
+			border: none;
+			border-bottom: solid 1px $white;
+			width: 100%;
+			font-size: 20px;
+			color: $white;
+			font-family: "Poppins", sans-serif;
+		}
+		input.field::placeholder,
+		textarea.field::placeholder {
+			font-size: 18px;
+			color: $white;
+		}
+		input.name {
+			width: 90%;
+			padding-bottom: 20px;
+		}
+		input.message {
+			height: 100px;
+			margin-bottom: 20px;
+		}
+		label.newsletter {
+			margin: 0 20px;
+			font-size: 18px;
+			color: $white;
+		}
+		select {
+			padding: 20px;
+			background: none;
+			border: none;
+			border-bottom: solid 1px $white;
+			width: 10%;
+			font-size: 20px;
+			color: $white;
+			font-family: "Poppins", sans-serif;
+		}
+		.form_error {
+			color: $secondary;
+			margin-bottom: 0 !important;
 		}
 	}
 }
