@@ -25,8 +25,6 @@ function Header() {
 			: header.classList.remove("is-sticky");
 	};
 
-	console.log(showLinks);
-
 	return (
 		<header className="header-section">
 			<nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
