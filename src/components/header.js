@@ -1,5 +1,4 @@
 // <a href="">Projets</a>
-// <a href="">Contact</a>
 
 import { useState, useEffect } from "react";
 
@@ -45,6 +44,11 @@ function Header() {
 					<li className="navbar_item">
 						<a href="#skills" className="navbar_link">
 							Compétences
+						</a>
+					</li>
+					<li className="navbar_item">
+						<a href="#contact" className="navbar_link">
+							Contact
 						</a>
 					</li>
 				</ul>
