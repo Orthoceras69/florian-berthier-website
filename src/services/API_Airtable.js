@@ -1,9 +1,9 @@
-import AirtableKey from "./key/Airtable_key";
-
+/* eslint-disable no-undef */
 function AirtableApi(data) {
-	// eslint-disable-next-line no-undef
 	var Airtable = require("airtable");
-	var base = new Airtable({ apiKey: AirtableKey }).base("apphmIhdtXaiTR3r1");
+	var base = new Airtable({
+		apiKey: process.env.REACT_APP_AIRTABLE_KEY,
+	}).base("apphmIhdtXaiTR3r1");
 
 	base("Contact Form").create(
 		{
