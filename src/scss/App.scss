@@ -7,6 +7,7 @@ $black: #000;
 $grey: #808080;
 $white: #fff;
 $primary: #0d0551;
+$degraded_primary: #1e407e;
 $secondary: #53dd6c;
 $tertiary: #30e9ff;
 
@@ -67,9 +68,10 @@ i {
 	background: $secondary;
 	transition: 0.3s;
 	box-shadow: 0px 0px 5px 0px $black;
+	color: $primary;
 }
 i:hover {
-	color: $primary;
+	color: $white;
 	box-shadow: none;
 }
 
@@ -87,10 +89,13 @@ input[type="submit"]:hover {
 }
 
 .button {
-	margin: 25px 0;
-	text-align: center;
+	margin: 25px auto;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 	a,
 	input[type="submit"] {
+		margin: 0 auto;
 		font-family: "Poppins", sans-serif;
 		border: solid 1px $white;
 		border-radius: 10px;
@@ -99,10 +104,8 @@ input[type="submit"]:hover {
 		transition: 0.3s;
 		background: none;
 	}
-}
-.button:hover {
-	a,
-	input[type="submit"] {
+	a:hover,
+	input[type="submit"]:hover {
 		border: solid 1px $secondary;
 		color: $secondary;
 	}
@@ -117,6 +120,15 @@ input[type="submit"]:hover {
 
 hr {
 	width: 150px;
+}
+
+.loader {
+	display: flex;
+	flex-wrap: wrap;
+	img {
+		width: 150px;
+		margin: 50px auto;
+	}
 }
 
 .columns {
@@ -135,6 +147,9 @@ hr {
 	}
 	.column1_2 {
 		width: 50%;
+	}
+	.column2_3 {
+		width: 66%;
 	}
 	.column3_4 {
 		width: 75%;
@@ -196,7 +211,8 @@ hr {
 			}
 		}
 		a.envelope:hover,
-		a.phone:hover {
+		a.phone:hover,
+		a.webiste:hover {
 			border: solid 2px $secondary;
 			svg {
 				color: $secondary;
@@ -316,9 +332,12 @@ main {
 	}
 }
 
+#projects {
+	padding-top: 100px;
+}
 #skills,
 #contact {
-	background: rgba($tertiary, 0.25);
+	background: $degraded_primary;
 }
 
 section {
@@ -338,14 +357,14 @@ section {
 			svg {
 				width: 100%;
 				height: 20px;
-				color: $white;
+				color: $primary;
 				transition: 0.3s;
 			}
 			strong {
 				margin-top: 15px;
 				width: 100%;
 				text-align: center;
-				color: $white;
+				color: $primary;
 				transition: 0.3s;
 			}
 		}
@@ -353,7 +372,7 @@ section {
 			box-shadow: none;
 			svg,
 			strong {
-				color: $primary;
+				color: $white;
 			}
 		}
 	}
@@ -387,13 +406,13 @@ section {
 			svg {
 				width: 16.5px;
 				height: 16.5px;
-				color: $white;
+				color: $primary;
 				transition: 0.3s;
 				margin-right: 10px;
 			}
 			strong {
 				font-size: 14px;
-				color: $white;
+				color: $primary;
 				transition: 0.3s;
 			}
 		}
@@ -401,7 +420,57 @@ section {
 			box-shadow: none;
 			svg,
 			strong {
-				color: $primary;
+				color: $white;
+			}
+		}
+	}
+
+	.project {
+		border: solid 1px $secondary;
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0px 0px 15px 0px rgba($black, 50%);
+		.project_img {
+			margin: auto 0;
+			img {
+				width: 100%;
+				border-radius: 10px;
+				border: solid 2px $secondary;
+			}
+			.social_nav {
+				justify-content: right;
+			}
+		}
+		.project_desc {
+			padding-left: 50px;
+			.status {
+				margin: 0 !important;
+				.termine {
+					background: rgba(green, 75%);
+					padding: 5px 10px;
+					border-radius: 10px;
+				}
+				.en_cours {
+					background: rgba(orange, 75%);
+					padding: 5px 10px;
+					border-radius: 10px;
+				}
+				.en_preparation {
+					background: rgba(red, 75%);
+					padding: 5px 10px;
+					border-radius: 10px;
+				}
+			}
+			.technos {
+				justify-content: left;
+				img {
+					margin: 10px;
+					box-shadow: 0px 0px 5px 0px rgba($black, 50%);
+					transition: 0.3s;
+				}
+				img:hover {
+					box-shadow: none !important;
+				}
 			}
 		}
 	}

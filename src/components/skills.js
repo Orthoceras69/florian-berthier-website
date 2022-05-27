@@ -10,7 +10,7 @@ function Skills() {
 				<div className="columns">
 					<div className="column1_2">
 						<h3>Compétences Téchniques :</h3>
-						<h4>Techno Front :</h4>
+						<h4>Technos Front :</h4>
 						<div className="columns technical_skills">
 							<img
 								src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
@@ -41,7 +41,7 @@ function Skills() {
 								alt="WordPress"
 							/>
 						</div>
-						<h4>Techno Back :</h4>
+						<h4>Technos Back :</h4>
 						<div className="columns technical_skills">
 							<img
 								src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"
@@ -54,6 +54,10 @@ function Skills() {
 							<img
 								src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"
 								alt="MySQL"
+							/>
+							<img
+								src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"
+								alt="Node.js"
 							/>
 							<img
 								src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"

@@ -1,22 +1,15 @@
 import "./scss/App.scss";
-import Header from "./components/header";
-import PlayerCard from "./components/player_card";
-import AboutMe from "./components/about_me";
-import Skills from "./components/skills";
-import Footer from "./components/footer";
-import Contact from "./components/contact";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./homepage";
+import ProjectPage from "./projectpage";
 
-function App() {
+export default function App() {
 	return (
-		<>
-			<Header />
-			<PlayerCard />
-			<AboutMe />
-			<Skills />
-			<Contact />
-			<Footer />
-		</>
+		<BrowserRouter>
+			<Routes>
+				<Route index path="/" element={<HomePage />} />
+				<Route path="projects" element={<ProjectPage />} />
+			</Routes>
+		</BrowserRouter>
 	);
 }
-
-export default App;
