@@ -551,6 +551,9 @@ footer {
 		.column1_3 {
 			width: 100%;
 		}
+		.column2_3 {
+			width: 100%;
+		}
 		.column1_2 {
 			width: 100%;
 		}
@@ -650,6 +653,28 @@ footer {
 				margin-top: -75px;
 				padding-top: 100px !important;
 			}
+		}
+	}
+	section {
+		.project {
+			.project_img {
+				.social_nav {
+					justify-content: center;
+				}
+			}
+			.project_desc {
+				padding-left: 10px;
+			}
+		}
+	}
+	form {
+		display: flex;
+		flex-wrap: wrap;
+		input.name {
+			width: 70% !important;
+		}
+		select {
+			width: 30% !important;
 		}
 	}
 }
