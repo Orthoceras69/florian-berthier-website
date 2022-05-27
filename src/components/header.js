@@ -1,8 +1,7 @@
-// <a href="">Projets</a>
-
+import { HashLink as Link } from "react-router-hash-link";
 import { useState, useEffect } from "react";
 
-function Header() {
+export default function Header() {
 	const [showLinks, setShowLinks] = useState(false);
 
 	const handleShowLinks = () => {
@@ -27,29 +26,34 @@ function Header() {
 	return (
 		<header className="header-section">
 			<nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-				<a href="" className="logo">
+				<Link to="/#home" className="logo">
 					<img src="/img/Logo_Blanc_Nom.png" alt="Logo Florian Berthier" />
-				</a>
+				</Link>
 				<ul className="navbar_links">
 					<li className="navbar_item">
-						<a href="#home" className="navbar_link">
+						<Link to="/#home" className="navbar_link">
 							Accueil
-						</a>
+						</Link>
 					</li>
 					<li className="navbar_item">
-						<a href="#about_me" className="navbar_link">
+						<Link to="/#about_me" className="navbar_link">
 							À propos
-						</a>
+						</Link>
 					</li>
 					<li className="navbar_item">
-						<a href="#skills" className="navbar_link">
+						<Link to="/#skills" className="navbar_link">
 							Compétences
-						</a>
+						</Link>
 					</li>
 					<li className="navbar_item">
-						<a href="#contact" className="navbar_link">
+						<Link to="/#project" className="navbar_link">
+							Projets
+						</Link>
+					</li>
+					<li className="navbar_item">
+						<Link to="/#contact" className="navbar_link">
 							Contact
-						</a>
+						</Link>
 					</li>
 				</ul>
 				<button className="navbar_burger" onClick={handleShowLinks}>
@@ -59,5 +63,3 @@ function Header() {
 		</header>
 	);
 }
-
-export default Header;

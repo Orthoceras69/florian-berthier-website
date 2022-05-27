@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
 import * as yup from "yup";
-import AirtableApi from "../services/API_Airtable";
+import SendAirtable from "../services/Send_Airtable";
 
 const schema = yup
 	.object()
@@ -31,11 +31,9 @@ function Contact() {
 	});
 
 	const onSubmit = (data) => {
-		AirtableApi(data);
+		SendAirtable(data);
 		handleShowContact();
 	};
-
-	console.log(errors);
 
 	return (
 		<div id="contact">
