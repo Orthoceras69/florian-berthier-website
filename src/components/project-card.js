@@ -4,10 +4,11 @@ import SkillCard from "./skill_card";
 import PropTypes from "prop-types";
 
 function ProjectCard({ recordData }) {
+	console.log(recordData);
 	return (
 		<div className="columns project">
 			<div className="column1_3 project_img">
-				<img src={recordData.ImageSource} />
+				<img src={recordData.Image[0].url} />
 				<nav className="columns social_nav">
 					{recordData.WebLink ? (
 						<div>
