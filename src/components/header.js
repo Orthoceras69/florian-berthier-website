@@ -51,7 +51,7 @@ export default function Header() {
 						</Link>
 					</li>
 					<li className="navbar_item">
-						<Link to="/#contact" className="navbar_link">
+						<Link to={{ pathname: "/", hash: "#contact" }} className="navbar_link">
 							Contact
 						</Link>
 					</li>

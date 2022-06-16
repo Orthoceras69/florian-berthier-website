@@ -7,7 +7,7 @@ function PlayerCard() {
 			<main style={{ background: `url(${background})` }}>
 				<div className="player_card">
 					<div className="profil_picture">
-						<img src="/img/Florian_Berthier.jpeg" alt="Florian Berthier" />
+						<img src="/img/Florian_Berthier.jpg" alt="Florian Berthier" />
 					</div>
 					<div className="player_info">
 						<h1>
