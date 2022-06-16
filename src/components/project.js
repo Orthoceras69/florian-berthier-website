@@ -12,7 +12,9 @@ const Projects = () => {
 				<h3>Dernier projet réalisé :</h3>
 				<OneProject />
 				<div className="button">
-					<Link to="/projects#projects">Voir mes autres projets</Link>
+					<Link to={{ pathname: "/projects/", hash: "#projects" }}>
+						Voir mes autres projets
+					</Link>
 				</div>
 			</section>
 		</div>
