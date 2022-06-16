@@ -425,8 +425,12 @@ section {
 				border-radius: 10px;
 				border: solid 2px $secondary;
 			}
+
 			.social_nav {
 				justify-content: right;
+				a {
+					margin-left: 10px !important;
+				}
 			}
 		}
 		.project_desc {

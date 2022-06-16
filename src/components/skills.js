@@ -60,6 +60,10 @@ function Skills() {
 								alt="Node.js"
 							/>
 							<img
+								src="https://img.shields.io/badge/API-FF3621?style=for-the-badge&logo=databricks&logoColor=white"
+								alt="API"
+							/>
+							<img
 								src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
 								alt="MongoDB"
 							/>
