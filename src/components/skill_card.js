@@ -103,6 +103,14 @@ function SkillCard(i) {
 			/>
 		);
 	}
+	if (i.value == "API") {
+		return (
+			<img
+				src="https://img.shields.io/badge/API-FF3621?style=for-the-badge&logo=databricks&logoColor=white"
+				alt="API"
+			/>
+		);
+	}
 }
 
 export default SkillCard;
