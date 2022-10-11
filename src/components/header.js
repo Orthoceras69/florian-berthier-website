@@ -30,28 +30,28 @@ export default function Header() {
 					<img src="/img/Logo_Blanc_Nom.png" alt="Logo Florian Berthier" />
 				</Link>
 				<ul className="navbar_links">
-					<li className="navbar_item">
+					<li className="navbar_item" onClick={handleShowLinks}>
 						<Link to="/#home" className="navbar_link">
 							Accueil
 						</Link>
 					</li>
-					<li className="navbar_item">
+					<li className="navbar_item" onClick={handleShowLinks}>
 						<Link to="/#about_me" className="navbar_link">
 							À propos
 						</Link>
 					</li>
-					<li className="navbar_item">
+					<li className="navbar_item" onClick={handleShowLinks}>
 						<Link to="/#skills" className="navbar_link">
 							Compétences
 						</Link>
 					</li>
-					<li className="navbar_item">
+					<li className="navbar_item" onClick={handleShowLinks}>
 						<Link to="/#project" className="navbar_link">
 							Projets
 						</Link>
 					</li>
-					<li className="navbar_item">
-						<Link to={{ pathname: "/", hash: "#contact" }} className="navbar_link">
+					<li className="navbar_item" onClick={handleShowLinks}>
+						<Link to="/#contact" className="navbar_link">
 							Contact
 						</Link>
 					</li>
