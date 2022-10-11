@@ -332,7 +332,8 @@ main {
 	}
 }
 
-#projects {
+#projects,
+#legals {
 	padding-top: 100px;
 }
 
@@ -544,6 +545,13 @@ footer {
 			img {
 				width: 100%;
 			}
+		}
+	}
+	.footer_nav {
+		width: 100%;
+		.footer_links {
+			text-align: center;
+			list-style: none;
 		}
 	}
 }
